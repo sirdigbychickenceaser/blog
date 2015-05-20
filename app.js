@@ -8,6 +8,15 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+// ********** Added By Me **********
+
+var sass = require('node-sass');
+sass.render({
+  file: "public/stylesheets/style.scss"
+}, function(err, result) {} );
+
+// *********************************
+
 var app = express();
 
 // view engine setup
